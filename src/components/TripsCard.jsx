@@ -9,23 +9,23 @@ export default function TripsCard() {
                 <div className="row row-cols-1">
                     {
                         trips.map(trip => (
-                            <div className="col">
+                            <div className="col" key={trip.id}>
                                 <div className="card my-3">
                                     <div className="card-body">
                                         <h1 className="card-title">
                                             {trip.destinazione}
                                         </h1>
                                         <div className='card-text'>
-                                            <div className='fs-4'>
+                                            <div className='fs-5'>
                                                 <span><strong>Data D'inizio: </strong></span><span>{trip.dataInizio}</span>
                                             </div>
 
-                                            <div className='fs-4'>
+                                            <div className='fs-5'>
                                                 <span><strong>Data Di Fine: </strong></span><span>{trip.dataFine}</span>
                                             </div>
                                         </div>
                                         <div className='mt-3'>
-                                            <Link to={`trip/${trip.id}`} className='btn btn-primary fs-5'>Dettagli Viaggio</Link>
+                                            <Link to={`trip/${trip.id}`} className='btn btn-primary fs-6'>Dettagli Viaggio</Link>
                                         </div>
                                     </div>
 
