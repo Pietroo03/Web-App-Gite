@@ -19,10 +19,10 @@ export default function SingleTripsCard({ participant }) {
                             aria-expanded={isOpen ? 'true' : 'false'}
                             aria-controls={`collapse-${participant.id}`}
                         >
-                            <h2>
+                            <h3>
                                 <span>{participant.nome} </span>
                                 <span>{participant.cognome}</span>
-                            </h2>
+                            </h3>
                         </button>
 
                     </div>
@@ -32,7 +32,7 @@ export default function SingleTripsCard({ participant }) {
                     className={`accordion-collapse collapse ${isOpen ? 'show shadow' : ''}`}
                     data-bs-parent={`#accordion-${participant.id}`}
                 >
-                    <div className="accordion-body fs-5">
+                    <div className="accordion-body fs-6">
                         <p><strong>Nome:</strong> {participant.nome}</p>
                         <p><strong>Cognome:</strong> {participant.cognome}</p>
                         <p><strong>Data di nascita:</strong> {participant.dataNascita}</p>
