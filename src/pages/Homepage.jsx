@@ -1,5 +1,5 @@
 import TripsCard from "../components/TripsCard"
-function homepage() {
+export default function HomePage() {
 
 
     return (
