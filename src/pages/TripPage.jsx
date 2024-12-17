@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import SingleTripCard from "../components/SingleTripCard"
-import Partecipants from "../data/Partecipants"
+import Participants from "../data/Participants"
 
 export default function TripPage() {
 
@@ -10,11 +10,11 @@ export default function TripPage() {
         <div className="container">
             <div className="row">
                 <div className="col d-flex justify-content-center flex-wrap gap-3">
-                    {Partecipants.map((partecipant) =>
+                    {Participants.map((participant) =>
                         <SingleTripCard
-                            partecipants_id={id}
-                            key={partecipant.id}
-                            partecipant={partecipant}
+                            participants_id={id}
+                            key={participant.id}
+                            participant={participant}
                         />
                     )}
                 </div>
