@@ -10,10 +10,10 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route element={DefaultLayout}>
+          <Route element={<DefaultLayout />}>
 
-            <Route index element={HomePage} />
-            <Route path="trip/:id" element={TripPage} />
+            <Route index element={<HomePage />} />
+            <Route path="trip/:id" element={<TripPage />} />
 
           </Route>
         </Routes>
