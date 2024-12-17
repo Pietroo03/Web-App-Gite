@@ -29,7 +29,7 @@ export default function SingleTripsCard({ participant }) {
                 </h2>
                 <div
                     id={`collapse-${participant.id}`}
-                    className={`accordion-collapse collapse ${isOpen ? 'show' : ''}`}
+                    className={`accordion-collapse collapse ${isOpen ? 'show shadow' : ''}`}
                     data-bs-parent={`#accordion-${participant.id}`}
                 >
                     <div className="accordion-body fs-5">
@@ -42,6 +42,6 @@ export default function SingleTripsCard({ participant }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
