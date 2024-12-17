@@ -8,9 +8,9 @@ export default function TripPage() {
 
     return (
         <div className="container">
-            <h2 className="text-center">Partecipanti</h2>
-            <div className="row">
-                <div className="col d-flex justify-content-center flex-wrap gap-3">
+            <h1 className="text-center">Partecipanti</h1>
+            <div className="row row-cols-1">
+                <div className="col py-3">
                     {Participants.map((participant) =>
                         <SingleTripCard
                             participants_id={id}
@@ -21,7 +21,7 @@ export default function TripPage() {
                 </div>
             </div>
             <div className="text-center mt-3">
-                <Link to="/" className="btn btn-primary">
+                <Link to="/" className="btn btn-dark ">
                     Torna alla Home
                 </Link>
             </div>
