@@ -1,4 +1,4 @@
-import TripsList from '../data/trips'
+import trips from '../data/trips'
 
 export default function TripsCard() {
 
@@ -6,8 +6,8 @@ export default function TripsCard() {
     return (
         <>
             {
-                TripsList.map(trip => (
-                    <div className="container">
+                trips.map(trip => (
+                    <div className="container" key={trip.id}>
                         <h2 className="element-1">
                             {trip.destinazione}
                         </h2>

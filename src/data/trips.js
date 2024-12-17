@@ -1,5 +1,5 @@
-//data/trips.js
-module.exports = [
+
+const trips = [
     {
         "id": 1,
         "destinazione": "Roma",
@@ -43,3 +43,6 @@ module.exports = [
         "dataFine": "2024-07-08"
     }
 ];
+
+
+export default trips
