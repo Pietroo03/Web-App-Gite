@@ -3,7 +3,6 @@ import DefaultLayout from "./layout/DefaultLayout"
 import Homepage from "./pages/Homepage"
 import TripPage from "./pages/TripPage"
 
-
 function App() {
 
   return (
