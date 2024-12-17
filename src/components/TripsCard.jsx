@@ -10,22 +10,22 @@ export default function TripsCard() {
                     {
                         trips.map(trip => (
                             <div className="col">
-                                <div className="card">
+                                <div className="card my-3">
                                     <div className="card-body">
-                                        <h2 className="element-1">
+                                        <h1 className="card-title">
                                             {trip.destinazione}
-                                        </h2>
-                                        <div>
-                                            <div>Data D'inizio Viaggio:
-                                                <span>{trip.dataInizio}</span>
+                                        </h1>
+                                        <div className='card-text'>
+                                            <div className='fs-4'>
+                                                <span><strong>Data D'inizio: </strong></span><span>{trip.dataInizio}</span>
                                             </div>
 
-                                            <div>Data Di Fine Viaggio:
-                                                <span>{trip.dataFine}</span>
+                                            <div className='fs-4'>
+                                                <span><strong>Data Di Fine: </strong></span><span>{trip.dataFine}</span>
                                             </div>
                                         </div>
-                                        <div>
-                                            <Link to={`trip/${trip.id}`} className='btn btn-primary'>Dettagli Viaggio</Link>
+                                        <div className='mt-3'>
+                                            <Link to={`trip/${trip.id}`} className='btn btn-primary fs-5'>Dettagli Viaggio</Link>
                                         </div>
                                     </div>
 
