@@ -5,9 +5,9 @@ export default function SingleTripsCard({ participant }) {
                 <p>{`Nome: ${participant.nome}`}</p>
                 <p>{`Cognome: ${participant.cognome}`}</p>
                 <p>{`ID partecipante: ${participant.id}`}</p>
-                <p>{`Data di nascita: ${participant.data_nascita}`}</p>
-                <p>{`CF: ${participant.cf}`}</p>
-                <p>{`Telefono: ${participant.telefono}`}</p>
+                <p>{`Data di nascita: ${participant.dataNascita}`}</p>
+                <p>{`CF: ${participant.codiceFiscale}`}</p>
+                <p>{`Telefono: ${participant.numeroTelefono}`}</p>
                 <p>{`Email: ${participant.email}`}</p>
             </div>
         </div>
