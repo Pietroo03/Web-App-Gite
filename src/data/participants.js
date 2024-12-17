@@ -1,5 +1,5 @@
 //data/partecipants.js
-module.exports = [
+const participants = [
     {
         "id": 1,
         "nome": "Giovanni",
@@ -64,3 +64,5 @@ module.exports = [
         "email": "alessandro.verdi@example.com"
     }
 ];
+
+export default participants
