@@ -1,5 +1,5 @@
 import trips from '../data/trips'
-
+import { Link } from 'react-router-dom'
 export default function TripsCard() {
 
 
@@ -21,7 +21,7 @@ export default function TripsCard() {
                             </div>
                         </div>
                         <div>
-                            <button>Dettagli Viaggio</button>
+                            <Link to={`trip/${trip.id}`}>Dettagli Viaggio</Link>
                         </div>
                     </div>
 
