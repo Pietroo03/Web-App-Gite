@@ -10,10 +10,18 @@ export default function TripPage() {
     const trip = trips.find(trip => trip.id === Number(id))
 
     const [openAccordionId, setOpenAccordionId] = useState(null);
+    const [searchTerm, setSearchTerm] = useState("");
 
     const toggleAccordion = (id) => {
         setOpenAccordionId(prevId => (prevId === id ? null : id))
     }
+
+    // Filtraggio dei partecipanti in base al nome o cognome
+    const filteredParticipants = Participants.filter(participant => {
+        const fullName = `${participant.nome} ${participant.cognome}`.toLowerCase();  // Combina nome e cognome in minuscolo
+        return fullName.includes(searchTerm.toLowerCase());  // Verifica se il termine di ricerca è presente
+    });
+
     return (
         <div className="container-sm border rounded border-dark shadow">
 
@@ -25,9 +33,21 @@ export default function TripPage() {
             }
 
             <h1 className="">Partecipanti</h1>
+
+            {/* Barra di ricerca */}
+            <div className="mb-3">
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Cerca per nome o cognome"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}  // Aggiorna searchTerm al cambiamento
+                />
+            </div>
+
             <div className="row row-cols-1">
                 <div className="col py-3">
-                    {Participants.map((participant) =>
+                    {filteredParticipants.map((participant) =>
                         <SingleTripCard
                             participants_id={id}
                             key={participant.id}
