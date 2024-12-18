@@ -15,32 +15,32 @@ const trips = [
     {
         "id": 3,
         "destinazione": "Londra",
-        "dataInizio": "2024-03-01",
-        "dataFine": "2024-03-07"
+        "dataInizio": "01-03-2024",
+        "dataFine": "07-03-2024"
     },
     {
         "id": 4,
         "destinazione": "New York",
-        "dataInizio": "2024-04-20",
-        "dataFine": "2024-04-30"
+        "dataInizio": "20-04-2024",
+        "dataFine": "30-04-2024"
     },
     {
         "id": 5,
         "destinazione": "Tokyo",
-        "dataInizio": "2024-05-15",
-        "dataFine": "2024-05-25"
+        "dataInizio": "15-05-2024",
+        "dataFine": "25-05-2024"
     },
     {
         "id": 6,
         "destinazione": "Sydney",
-        "dataInizio": "2024-06-10",
-        "dataFine": "2024-06-20"
+        "dataInizio": "10-06-2024",
+        "dataFine": "20-06-2024"
     },
     {
         "id": 7,
         "destinazione": "Dubai",
-        "dataInizio": "2024-07-01",
-        "dataFine": "2024-07-08"
+        "dataInizio": "01-08-2024",
+        "dataFine": "08-07-2024"
     }
 ];
 
