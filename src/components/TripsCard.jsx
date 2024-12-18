@@ -17,11 +17,11 @@ export default function TripsCard() {
                                         </h1>
                                         <div className='card-text'>
                                             <div className='fs-5'>
-                                                <span><strong>Data D'inizio: </strong></span><span>{trip.dataInizio}</span>
+                                                <span><strong>Data Inizio: </strong></span><span>{trip.dataInizio}</span>
                                             </div>
 
                                             <div className='fs-5'>
-                                                <span><strong>Data Di Fine: </strong></span><span>{trip.dataFine}</span>
+                                                <span><strong>Data Fine: </strong></span><span>{trip.dataFine}</span>
                                             </div>
                                         </div>
                                         <div className='mt-3'>
