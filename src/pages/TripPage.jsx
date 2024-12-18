@@ -15,7 +15,7 @@ export default function TripPage() {
         setOpenAccordionId(prevId => (prevId === id ? null : id))
     }
     return (
-        <div className="container border rounded border-dark shadow">
+        <div className="container-sm border rounded border-dark shadow">
 
             {
                 <div className="my-3 d-flex align-items-center justify-content-center">
