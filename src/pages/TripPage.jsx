@@ -35,10 +35,10 @@ export default function TripPage() {
 
             <h1 className="">Partecipanti</h1>
 
-            <div className="d-flex">
-                <i className="bi bi-search me-2 fs-6" style={{ transform: 'scaleX(-1)' }}></i>
+            <div className="d-flex align-items-center">
+                <i className="bi bi-search me-2 fs-5" style={{ transform: 'scaleX(-1)' }}></i>
                 {/* Barra di ricerca */}
-                <div className=" rounded border border-dark">
+                <div className=" rounded border border-dark flex-grow-1">
 
                     <input
                         type="text"
