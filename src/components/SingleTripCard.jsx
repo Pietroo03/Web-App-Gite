@@ -11,9 +11,9 @@ export default function SingleTripsCard({ participant, isOpen, toggleAccordion }
             <div className="accordion py-2" id={`accordion-${participant.id}`}>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                        <div className='border border-dark'>
+                        <div className='border rounded border-dark'>
                             <button
-                                className={`accordion-button ${isOpen ? 'border-0 border-bottom-0 text-black' : 'collapsed border-0 text-black'}`}
+                                className={`accordion-button ${isOpen ? 'rounded border border-0 text-black' : 'collapsed text-black'}`}
                                 type="button"
                                 onClick={toggleAccordion}
                                 aria-expanded={isOpen ? 'true' : 'false'}
