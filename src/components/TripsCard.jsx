@@ -10,7 +10,7 @@ export default function TripsCard() {
                     {
                         trips.map(trip => (
                             <div className="col" key={trip.id}>
-                                <div className="card shadow my-3">
+                                <div className="card border-dark shadow my-3">
                                     <div className="card-body">
                                         <h1 className="card-title">
                                             {trip.destinazione}

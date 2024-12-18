@@ -15,7 +15,7 @@ export default function TripPage() {
         setOpenAccordionId(prevId => (prevId === id ? null : id))
     }
     return (
-        <div className="container border shadow">
+        <div className="container border rounded border-dark shadow">
 
             {
                 <div className="my-3 d-flex align-items-center justify-content-center">
@@ -39,7 +39,7 @@ export default function TripPage() {
                     )}
                 </div>
             </div>
-            <div className="text-center my-3">
+            <div className="text-center mb-4">
                 <Link to="/" className="btn btn-dark ">
                     Torna alla Home
                 </Link>
