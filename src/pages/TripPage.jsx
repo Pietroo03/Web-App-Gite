@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom"
 import SingleTripCard from "../components/SingleTripCard"
 import Participants from "../data/Participants"
+import trips from "../data/trips"
 
 export default function TripPage() {
 
@@ -16,6 +17,7 @@ export default function TripPage() {
                             participants_id={id}
                             key={participant.id}
                             participant={participant}
+                            trips={trips}
                         />
                     )}
                 </div>
