@@ -3,14 +3,14 @@ const trips = [
     {
         "id": 1,
         "destinazione": "Roma",
-        "dataInizio": "2024-01-10",
-        "dataFine": "2024-01-15"
+        "dataInizio": "10-01-2024",
+        "dataFine": "15-01-2024"
     },
     {
         "id": 2,
         "destinazione": "Parigi",
-        "dataInizio": "2024-02-05",
-        "dataFine": "2024-02-12"
+        "dataInizio": "05-02-2024",
+        "dataFine": "12-02-2024"
     },
     {
         "id": 3,

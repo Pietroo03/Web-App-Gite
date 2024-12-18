@@ -4,7 +4,7 @@ const participants = [
         "id": 1,
         "nome": "Giovanni",
         "cognome": "Rossi",
-        "dataNascita": "1990-05-15",
+        "dataNascita": "15-05-1990",
         "codiceFiscale": "RSSGNN90E15H501Z",
         "numeroTelefono": "3312345678",
         "email": "giovanni.rossi@example.com"
@@ -13,7 +13,7 @@ const participants = [
         "id": 2,
         "nome": "Maria",
         "cognome": "Bianchi",
-        "dataNascita": "1985-07-22",
+        "dataNascita": "22-07-1985",
         "codiceFiscale": "BNCMRA85L62A662Z",
         "numeroTelefono": "3398765432",
         "email": "maria.bianchi@example.com"
@@ -22,7 +22,7 @@ const participants = [
         "id": 3,
         "nome": "Luca",
         "cognome": "Verdi",
-        "dataNascita": "1982-11-05",
+        "dataNascita": "05-11-1982",
         "codiceFiscale": "VRDLUC82S05F839Z",
         "numeroTelefono": "3401234567",
         "email": "luca.verdi@example.com"
@@ -31,7 +31,7 @@ const participants = [
         "id": 4,
         "nome": "Laura",
         "cognome": "Neri",
-        "dataNascita": "1993-02-14",
+        "dataNascita": "14-02-1993",
         "codiceFiscale": "NRILRA93B54H501N",
         "numeroTelefono": "3359876543",
         "email": "laura.neri@example.com"
@@ -40,7 +40,7 @@ const participants = [
         "id": 5,
         "nome": "Marco",
         "cognome": "Gialli",
-        "dataNascita": "1997-08-25",
+        "dataNascita": "25-08-1997",
         "codiceFiscale": "GLLMRC97M25H501X",
         "numeroTelefono": "3365432109",
         "email": "marco.gialli@example.com"
@@ -49,7 +49,7 @@ const participants = [
         "id": 6,
         "nome": "Francesca",
         "cognome": "Blu",
-        "dataNascita": "1988-03-30",
+        "dataNascita": "30-03-1987",
         "codiceFiscale": "BLUFNC88C70F839X",
         "numeroTelefono": "3387654321",
         "email": "francesca.blu@example.com"
@@ -58,7 +58,7 @@ const participants = [
         "id": 7,
         "nome": "Alessandro",
         "cognome": "Verdi",
-        "dataNascita": "1991-12-02",
+        "dataNascita": "02-12-1998",
         "codiceFiscale": "VRDLSN91T02F839X",
         "numeroTelefono": "3441239876",
         "email": "alessandro.verdi@example.com"
