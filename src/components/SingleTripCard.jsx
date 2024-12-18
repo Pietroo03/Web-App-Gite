@@ -1,7 +1,7 @@
 import { useState, } from 'react';
 import { useParams } from 'react-router-dom';
 
-export default function SingleTripsCard({ participant, trips }) {
+export default function SingleTripsCard({ participant }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleAccordion = () => {
@@ -11,7 +11,7 @@ export default function SingleTripsCard({ participant, trips }) {
     const { id } = useParams()
 
 
-    const trip = trips.find(trip => trip.id === Number(id))
+
 
 
 
@@ -19,13 +19,7 @@ export default function SingleTripsCard({ participant, trips }) {
     return (
 
         <>
-            {
-                <div>
-                    <h2>{trip.destinazione}</h2>
-                    <span>{trip.dataInizio} </span>
-                    <span>/ {trip.dataFine}</span>
-                </div>
-            }
+
 
             <div className="accordion py-2" id={`accordion-${participant.id}`}>
                 <div className="accordion-item">
