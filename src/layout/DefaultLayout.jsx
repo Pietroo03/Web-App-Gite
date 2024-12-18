@@ -10,7 +10,7 @@ export default function DefaultLayout() {
         <>
             <Header />
 
-            <main className="min-vh-100 py-5 bg-light">
+            <main className="py-5 bg-light">
                 <Outlet />
             </main>
 
