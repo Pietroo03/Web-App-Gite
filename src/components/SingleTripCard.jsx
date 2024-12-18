@@ -24,9 +24,9 @@ export default function SingleTripsCard({ participant }) {
             <div className="accordion py-2" id={`accordion-${participant.id}`}>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                        <div className='shadow'>
+                        <div className='border border-dark'>
                             <button
-                                className={`accordion-button ${isOpen ? '' : 'collapsed'}`}
+                                className={`accordion-button ${isOpen ? 'border border-bottom-0' : 'collapsed'}`}
                                 type="button"
                                 onClick={toggleAccordion}
                                 aria-expanded={isOpen ? 'true' : 'false'}
@@ -42,7 +42,7 @@ export default function SingleTripsCard({ participant }) {
                     </h2>
                     <div
                         id={`collapse-${participant.id}`}
-                        className={`accordion-collapse collapse ${isOpen ? 'show shadow' : ''}`}
+                        className={`accordion-collapse collapse ${isOpen ? 'show shadow border border-top-0 border-dark' : ''}`}
                         data-bs-parent={`#accordion-${participant.id}`}
                     >
                         <div className="accordion-body fs-6">
