@@ -36,13 +36,13 @@ export default function TripPage() {
             <h1 className="pb-3">Partecipanti</h1>
 
             <div className="d-flex align-items-center pb-3">
-                <i className="bi bi-search me-2 fs-5" style={{ transform: 'scaleX(-1)' }}></i>
+                <i className="bi bi-search me-2 fs-2" style={{ transform: 'scaleX(-1)' }}></i>
                 {/* Barra di ricerca */}
                 <div className=" rounded border border-dark flex-grow-1">
 
                     <input
                         type="text"
-                        className="form-control"
+                        className="form-control fs-5"
                         placeholder="Cerca per nome o cognome"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}  // Aggiorna searchTerm al cambiamento

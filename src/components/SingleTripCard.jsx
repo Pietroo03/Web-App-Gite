@@ -32,11 +32,11 @@ export default function SingleTripsCard({ participant, isOpen, toggleAccordion }
                         className={`accordion-collapse collapse ${isOpen ? 'show shadow border border-top-0 border-dark' : ''}`}
                         data-bs-parent={`#accordion-${participant.id}`}
                     >
-                        <div className="accordion-body fs-6">
-                            <p><strong>Data di nascita:</strong> {participant.dataNascita}</p>
-                            <p><strong>Codice fiscale:</strong> {participant.codiceFiscale}</p>
-                            <p><strong>Telefono:</strong> {participant.numeroTelefono}</p>
-                            <p><strong>Email:</strong> {participant.email}</p>
+                        <div className="accordion-body fs-5">
+                            <div className='py-2'><strong>Data di nascita:</strong> {participant.dataNascita}</div>
+                            <div className='py-2'><strong>Codice fiscale:</strong> {participant.codiceFiscale}</div>
+                            <div className='py-2'><strong>Telefono:</strong> {participant.numeroTelefono}</div>
+                            <div className='py-2'><strong>Email:</strong> {participant.email}</div>
                         </div>
                     </div>
                 </div>
