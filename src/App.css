@@ -29,15 +29,11 @@ footer {
     height: 50px;
 }
 
-/* main::-webkit-scrollbar {
-    width: 8px;
-}
-
-main::-webkit-scrollbar-thumb {
-    background-color: #222529;
-    border-radius: 10px;
-}
-
-main::-webkit-scrollbar-track {
+.accordion-button:focus,
+.accordion-button:active,
+.accordion-item:focus-within {
+    outline: none;
+    box-shadow: none;
     background-color: transparent;
-} */
+    border-color: transparent;
+}
