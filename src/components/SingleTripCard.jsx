@@ -11,12 +11,7 @@ export default function SingleTripsCard({ participant, trips }) {
     const { id } = useParams()
 
 
-    function findDestination(trips, id) {
-        return trips.find(trip => trip.id === Number(id))
-    }
-
-
-    const trip = findDestination(trips, id);
+    const trip = trips.find(trip => trip.id === Number(id))
 
 
 
@@ -24,15 +19,13 @@ export default function SingleTripsCard({ participant, trips }) {
     return (
 
         <>
-            {trip ? (
+            {
                 <div>
                     <h2>{trip.destinazione}</h2>
                     <span>{trip.dataInizio} </span>
                     <span>/ {trip.dataFine}</span>
                 </div>
-            ) : (
-                <p>Destinazione non trovata</p>
-            )}
+            }
 
             <div className="accordion py-2" id={`accordion-${participant.id}`}>
                 <div className="accordion-item">
