@@ -2,11 +2,18 @@ import { useParams, Link } from "react-router-dom"
 import SingleTripCard from "../components/SingleTripCard"
 import Participants from "../data/Participants"
 import trips from "../data/trips"
+import { useState } from "react"
 
 export default function TripPage() {
 
     const { id } = useParams()
     const trip = trips.find(trip => trip.id === Number(id))
+
+    const [openAccordionId, setOpenAccordionId] = useState(null);
+
+    const toggleAccordion = (id) => {
+        setOpenAccordionId(prevId => (prevId === id ? null : id))
+    }
     return (
         <div className="container border shadow">
 
@@ -26,6 +33,8 @@ export default function TripPage() {
                             key={participant.id}
                             participant={participant}
                             trips={trips}
+                            isOpen={openAccordionId === participant.id}
+                            toggleAccordion={() => toggleAccordion(participant.id)}
                         />
                     )}
                 </div>

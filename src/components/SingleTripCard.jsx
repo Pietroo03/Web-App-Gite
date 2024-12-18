@@ -1,20 +1,7 @@
 import { useState, } from 'react';
 import { useParams } from 'react-router-dom';
 
-export default function SingleTripsCard({ participant }) {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleAccordion = () => {
-        setIsOpen(!isOpen);
-    };
-
-    const { id } = useParams()
-
-
-
-
-
-
+export default function SingleTripsCard({ participant, isOpen, toggleAccordion }) {
 
     return (
 
