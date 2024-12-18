@@ -20,7 +20,7 @@ export default function TripPage() {
             {
                 <div className="my-3 d-flex align-items-center justify-content-center">
                     <h1 className="pe-3">{trip.destinazione}</h1>
-                    <div>{`${trip.dataInizio} / ${trip.dataFine}`}</div>
+                    <div className="fs-5">{`${trip.dataInizio} / ${trip.dataFine}`}</div>
                 </div>
             }
 
