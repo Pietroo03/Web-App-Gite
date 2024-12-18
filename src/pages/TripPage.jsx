@@ -31,27 +31,27 @@ export default function TripPage() {
                     <div className="fs-5">{`${trip.dataInizio} / ${trip.dataFine}`}</div>
                 </div>
             }
-            <div className="d-flex justify-content-between align-items-middle">
 
-                <h1 className="">Partecipanti</h1>
 
-                <div className="d-flex align-items-center">
-                    <i class="bi bi-search me-2 fs-5" style={{ transform: 'scaleX(-1)' }}></i>
-                    {/* Barra di ricerca */}
-                    <div className=" rounded border border-dark">
+            <h1 className="">Partecipanti</h1>
 
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Cerca per nome o cognome"
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}  // Aggiorna searchTerm al cambiamento
-                        />
-                    </div>
+            <div className="d-flex">
+                <i className="bi bi-search me-2 fs-6" style={{ transform: 'scaleX(-1)' }}></i>
+                {/* Barra di ricerca */}
+                <div className=" rounded border border-dark">
 
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Cerca per nome o cognome"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}  // Aggiorna searchTerm al cambiamento
+                    />
                 </div>
 
             </div>
+
+
 
             <div className="row row-cols-1">
                 <div className="col py-3">
