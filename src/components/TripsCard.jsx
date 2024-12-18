@@ -25,7 +25,7 @@ export default function TripsCard() {
                                             </div>
                                         </div>
                                         <div className='mt-3'>
-                                            <Link to={`trip/:id`} className='btn btn-dark'>Dettagli Viaggio</Link>
+                                            <Link to={`trip/${trip.id}`} className='btn btn-dark'>Dettagli Viaggio</Link>
                                         </div>
                                     </div>
 
