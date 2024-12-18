@@ -5,42 +5,39 @@
 }
 
 body {
-    overflow: hidden;
     height: 100%;
-}
-
-header,
-footer {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+main {
+    margin-top: 80px;
+    padding-bottom: 20px;
+    flex: 1;
+    overflow-y: auto;
 }
 
 footer {
     height: 50px;
 }
 
-main {
-    height: calc(100vh - 130px);
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-main::-webkit-scrollbar {
+/* main::-webkit-scrollbar {
     width: 8px;
 }
 
 main::-webkit-scrollbar-thumb {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: #222529;
     border-radius: 10px;
-}
-
-main::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(100, 100, 100, 0.8);
 }
 
 main::-webkit-scrollbar-track {
     background-color: transparent;
-}
+} */
