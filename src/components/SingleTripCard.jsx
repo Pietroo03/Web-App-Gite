@@ -33,8 +33,6 @@ export default function SingleTripsCard({ participant, isOpen, toggleAccordion }
                         data-bs-parent={`#accordion-${participant.id}`}
                     >
                         <div className="accordion-body fs-6">
-                            <p><strong>Nome:</strong> {participant.nome}</p>
-                            <p><strong>Cognome:</strong> {participant.cognome}</p>
                             <p><strong>Data di nascita:</strong> {participant.dataNascita}</p>
                             <p><strong>Codice fiscale:</strong> {participant.codiceFiscale}</p>
                             <p><strong>Telefono:</strong> {participant.numeroTelefono}</p>
