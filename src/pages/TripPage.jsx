@@ -26,8 +26,8 @@ export default function TripPage() {
         <div className="container-sm border rounded border-dark shadow">
 
             {
-                <div className="my-3 d-flex align-items-center justify-content-center">
-                    <h1 className="pe-3">{trip.destinazione}</h1>
+                <div className="my-3 d-flex align-items-end justify-content-center">
+                    <h1 className="pe-3 mb-0">{trip.destinazione}</h1>
                     <div className="fs-5">{`${trip.dataInizio} / ${trip.dataFine}`}</div>
                 </div>
             }
