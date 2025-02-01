@@ -1,8 +1,14 @@
-# React + Vite
+# WEB APP PER AGENZIA DI VIAGGI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Progetto di gruppo al fine di creare una Web App utilizzando React.js per un'agenzia dei viaggi. 
+La richiesta era quella di creare in modo semplice, intuitivo e veloce una pagina con i viaggi in programma e all'indirizzamento trovare la lista dei partecipanti al viaggio.
 
-Currently, two official plugins are available:
+- Homepage con la lista di tutti i viaggi in programma. Presente la destinazione e il periodo del viaggio;
+- Pagina di dettaglio del singolo viaggio con all'interno la lista dei partecipanti, una barra di ricerca per cercare il singolo partecipante;
+- Scheda di dettaglio del singolo partecipante: Nome, Cognome, Data di nascita, Codice fiscale, Email, Numero di telefono.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### DIPENDENNZE UTILIZZATE
+
+- React
+- React Router Dom
+- Bootstrap
